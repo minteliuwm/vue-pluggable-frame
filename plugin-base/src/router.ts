@@ -11,7 +11,11 @@ const routes: Array<RouteConfig> = [{
 }, {
   path: '/micro',
   name: 'Home',
-  component: Home
+  component: Home,
+  children: [{
+    path: '',
+    redirect: 'module-job'
+  }]
 }];
 
 const router = new VueRouter({

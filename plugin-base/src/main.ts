@@ -12,11 +12,12 @@ Vue.config.productionTip = false;
 
 Vue.__GLOBAL_POOL__ = {
   store,
-  router,
-  utils
+  router
 };
 
 Vue.use(Antd);
+
+Vue.prototype.utils = utils;
 
 new Vue({
   router,

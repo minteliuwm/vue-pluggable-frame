@@ -32,6 +32,8 @@ export default class MHome extends Vue {
     });
   }
 
+  private mounted() {}
+
   private onMenuClick({ key = '' } = {}) {
     key && this.$router.push({
       path: `/micro/${key}`
