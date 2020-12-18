@@ -8,6 +8,9 @@ const PROXY = {
   },
   '^/module-warehouse': {
     target: 'http://localhost:9092/'
+  },
+  '^/module-file': {
+    target: 'http://localhost:9093/'
   }
 };
 

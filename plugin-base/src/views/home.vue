@@ -5,7 +5,8 @@
       <a-menu theme="dark" mode="horizontal" v-model="keys" :style="{ lineHeight: '64px' }" @click="onMenuClick">
         <a-menu-item key="module-job">任务</a-menu-item>
         <a-menu-item key="module-warehouse">数仓</a-menu-item>
-        <!-- <a-menu-item key="module-resource">资源</a-menu-item> -->
+        <a-menu-item key="module-file/file">文件</a-menu-item>
+        <a-menu-item key="module-file/arctic">Arctic</a-menu-item>
       </a-menu>
     </a-layout-header>
     <a-layout-content>
@@ -17,7 +18,7 @@
 <script lang="ts">
 import { Component, Vue, Watch } from 'vue-property-decorator';
 
-const MODULE_KEYS = ['module-job', 'module-warehouse'];
+const MODULE_KEYS = ['module-job', 'module-warehouse', 'module-file/file', 'module-file/arctic'];
 
 @Component
 export default class MHome extends Vue {
